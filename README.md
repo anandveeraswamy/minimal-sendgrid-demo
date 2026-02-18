@@ -53,7 +53,8 @@ A bare-bones standalone Python demo to send a single email using SendGrid.
 
 ```powershell
 python -m venv venv
-source venv/scripts/activate
+source venv/bin/activate (Mac/Linux)
+venv/scripts/activate (Windows)
 ```
 
 ### Step 5: Install SendGrid Package
@@ -71,7 +72,7 @@ FROM_EMAIL="your-verified-email@example.com"
 TO_EMAIL="recipient@example.com"
 ```
 
-### Step 7: Create `send_email.py`
+### Step 7: Create `send_email.py` (Already done in this repository)
 
 ```python
 import os
@@ -121,5 +122,3 @@ Change the `Mail()` parameters:
 - `to_emails`: Single email or list of emails
 
 ## That's It!
-
-This is the absolute simplest SendGrid sender. No frameworks, no DB, no auth—just pure email dispatch.
